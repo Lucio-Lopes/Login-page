@@ -28,7 +28,7 @@ header{
     gap: 30px;
 }
 .logo{
-    position:fixed;
+    position:absolute;
     left: 20%;
     font-weight: 700;
 }
