@@ -4,6 +4,8 @@ let passWord = document.getElementById('senha');
 let passWord2 = document.getElementById('senha2');
 const user1 = document.getElementById('usuario-login');
 const pass1 = document.getElementById('senha-login');
+const openBtn = document.querySelector('.menu');
+const nav = document.querySelector('#sidemenu');
 const id = [
     'lucio',
     'fernando'
@@ -79,3 +81,10 @@ function autenticar(){
         }
     }
 }
+
+
+function toggleMenu(){
+	nav.classList.toggle('active');
+}
+
+openBtn.addEventListener('click',toggleMenu);
