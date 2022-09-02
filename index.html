@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css"href="estilo.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <title>Login page</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div class="cabecalho">
+                    <h1 class="logo">JSB</h1>
+                    <nav class="cabecalho-menu">
+                        <ul>
+                            <li class="menu-item"><span class="material-symbols-outlined">home</span><a href="">Home</a></li>
+                            <li class="menu-item"><span class="material-symbols-outlined">work</span><a href="">Services</a></li>
+                            <li class="menu-item"><span class="material-symbols-outlined">mail</span><a href="">Contact</a></li>
+                            <li class="menu-item"><span class="material-symbols-outlined">help</span><a href="">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="login-cadastro">
+                <div class="login">
+                    <h1 class="texto">Login</h1>
+                        <div id="res"></div>
+                        <input type="text" nome="usuario" id="usuario-login" placeholder="Enter Your Username">
+                        <input type="password" nome="senha" id="senha-login" placeholder="Enter Your Password">
+                        <input class="button" type="submit" value="Sign in" onclick="entrar()">
+                        <p class="msg">Não possui cadastro?<a href="cadastro.html"> Cadastrar-se</a></p>
+                </div>
+                <div class="login">
+                    <h1 class="texto">Registration</h1>
+                        <input type="text" nome="usuario" id="usuario" placeholder="Enter Your Username">
+                        <input type="password" nome="senha" id="senha" placeholder="Enter Your Password">
+                        <input type="password" nome="senha" id="senha2" placeholder="Confirm Your Password">
+                        <input class="button" type="submit" value="Registration" onclick="autenticar()">
+                </div>
+            </div>
+            <footer class="footer-login">
+                <p>&copy; 2022 - Desenvolvimento Web</p>
+            </footer>
+        </div>
+        <script src="login-cadastro.js" type="text/javascript"></script>
+    </body>
+</html>
